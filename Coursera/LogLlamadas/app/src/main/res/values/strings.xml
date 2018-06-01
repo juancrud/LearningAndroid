@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Log Llamadas</string>
+
+    <string name="tvTitulo">Llamadas</string>
+    <string name="btnMostrarLlamadas">Mostrar las Llamadas</string>
+    <string name="lblNumero">Numero:</string>
+    <string name="lblFecha">Fecha:</string>
+    <string name="lblTipo">Tipo:</string>
+    <string name="lblDuracion">Duracion:</string>
+
+    <string name="entrada">Llamada Entrada</string>
+    <string name="salida">Llamada Salida</string>
+    <string name="perdida">Llamada Perdida</string>
+    <string name="desconocida">Llamada Desconocida</string>
+</resources>

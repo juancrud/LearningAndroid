@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ActivarBluetooth</string>
+
+    <string name="btnBluetooth">Habilitar Bluetooth</string>
+</resources>

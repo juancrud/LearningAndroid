@@ -8,9 +8,13 @@ import android.view.ViewGroup;
 
 import com.juancrud.miscontactos.R;
 
+/**
+ * A simple {@link Fragment} subclass.
+ */
 public class PerfilFragment extends Fragment {
 
     public PerfilFragment() {
+        // Required empty public constructor
     }
 
     @Override

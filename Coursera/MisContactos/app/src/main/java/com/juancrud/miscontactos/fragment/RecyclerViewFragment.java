@@ -3,6 +3,7 @@ package com.juancrud.miscontactos.fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -30,6 +31,12 @@ public class RecyclerViewFragment extends Fragment implements IRecyclerViewFragm
         rvContactos = (RecyclerView)view.findViewById(R.id.rvContactos);
         presenter = new RecyclerViewFragmentPresenter(this, getContext());
         return view;
+    }
+
+    @Override
+    public void generarGridLayout() {
+        GridLayoutManager glm = new GridLayoutManager(getActivity(), 2);
+        rvContactos.setLayoutManager(glm);
     }
 
     @Override

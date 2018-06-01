@@ -15,6 +15,7 @@ import com.juancrud.miscontactos.db.ConstructorContactos;
 import com.juancrud.miscontactos.pojo.Contacto;
 import com.juancrud.miscontactos.DetalleContacto;
 import com.juancrud.miscontactos.R;
+import com.squareup.picasso.Picasso;
 
 import java.lang.reflect.Constructor;
 import java.util.ArrayList;
@@ -32,7 +33,7 @@ public class ContactoAdaptador extends RecyclerView.Adapter<ContactoAdaptador.Co
     //Inflar el layout y lo pasa al viewholder para que obtenga los views
     @Override
     public ContactoViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_contacto, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_grid_contacto, parent, false);
         return new ContactoViewHolder(view);
     }
 
@@ -40,30 +41,16 @@ public class ContactoAdaptador extends RecyclerView.Adapter<ContactoAdaptador.Co
     @Override
     public void onBindViewHolder(final ContactoViewHolder holder, int position) {
         final Contacto contacto = contactos.get(position);
-        holder.imgFotoCV.setImageResource(contacto.getFoto());
-        holder.tvNombreCV.setText(contacto.getNombre());
-        holder.tvTelefonoCV.setText(contacto.getTelefono());
-        holder.tvLikes.setText(contacto.getLikes() + " likes");
+        Picasso.with(activity).load(contacto.getUrlFoto()).placeholder(R.drawable.mario).into(holder.imgFotoCV);
+        //holder.imgFotoCV.setImageResource(contacto.getUrlFoto());
+        holder.tvLikes.setText(contacto.getLikes() + "");
 
         holder.imgFotoCV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(activity, contacto.getNombre(), Toast.LENGTH_SHORT).show();
-
                 Intent intent = new Intent(activity, DetalleContacto.class);
                 intent.putExtra(activity.getString(R.string.pContacto), contacto);
                 activity.startActivity(intent);
-            }
-        });
-
-        holder.btnLike.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(activity, "Diste Like a: " + contacto.getNombre(), Toast.LENGTH_SHORT).show();
-
-                ConstructorContactos constructorContactos = new ConstructorContactos(activity);
-                constructorContactos.darLikeContacto(contacto);
-                holder.tvLikes.setText(constructorContactos.obtenerLikesContacto(contacto) + " likes");
             }
         });
     }
@@ -77,19 +64,13 @@ public class ContactoAdaptador extends RecyclerView.Adapter<ContactoAdaptador.Co
     public static class ContactoViewHolder extends RecyclerView.ViewHolder {
 
         private ImageView imgFotoCV;
-        private TextView tvNombreCV;
-        private TextView tvTelefonoCV;
         private TextView tvLikes;
-        private ImageButton btnLike;
 
         public ContactoViewHolder(View itemView) {
             super(itemView);
 
             imgFotoCV = (ImageView)itemView.findViewById(R.id.imgFotoCV);
-            tvNombreCV = (TextView)itemView.findViewById(R.id.tvNombreCV);
-            tvTelefonoCV = (TextView)itemView.findViewById(R.id.tvTelefonoCV);
             tvLikes = (TextView)itemView.findViewById(R.id.tvLikes);
-            btnLike = (ImageButton)itemView.findViewById(R.id.btnLike);
         }
     }
 }

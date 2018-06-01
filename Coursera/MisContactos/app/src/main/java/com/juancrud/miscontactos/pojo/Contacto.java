@@ -4,53 +4,41 @@ import java.io.Serializable;
 
 public class Contacto implements Serializable {
 
-    private int id;
-    private String nombre;
-    private String telefono;
-    private String email;
-    private int foto;
+    private String id;
+    private String nombreCompleto;
+    private String urlFoto;
     private int likes;
 
     public Contacto(){}
 
-    public Contacto(int foto, String nombre, String telefono, String email, int likes){
-        this.foto = foto;
-        this.nombre = nombre;
-        this.telefono = telefono;
-        this.email = email;
-        this.likes = likes;
+    public Contacto(String nombreCompleto, String urlFoto, int likes){
+        setNombreCompleto(nombreCompleto);
+        setUrlFoto(urlFoto);
+        setLikes(likes);
     }
 
-    public int getFoto() {
-        return foto;
+    public String getId() {
+        return id;
     }
 
-    public void setFoto(int foto) {
-        this.foto = foto;
+    public void setId(String id) {
+        this.id = id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombreCompleto() {
+        return nombreCompleto;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombreCompleto(String nombreCompleto) {
+        this.nombreCompleto = nombreCompleto;
     }
 
-    public String getTelefono() {
-        return telefono;
+    public String getUrlFoto() {
+        return urlFoto;
     }
 
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
+    public void setUrlFoto(String urlFoto) {
+        this.urlFoto = urlFoto;
     }
 
     public int getLikes() {
@@ -59,13 +47,5 @@ public class Contacto implements Serializable {
 
     public void setLikes(int likes) {
         this.likes = likes;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 }

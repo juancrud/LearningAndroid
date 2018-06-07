@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Evaluacion2</string>
+    <string name="msg_loading">Loading</string>
+    <string name="menu_star5">Star5</string>
+</resources>

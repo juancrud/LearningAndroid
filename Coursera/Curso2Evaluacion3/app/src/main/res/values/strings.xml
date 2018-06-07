@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Evaluacion3</string>
+    <string name="msg_loading">Loading</string>
+
+    <string name="menu_star5">Star5</string>
+    <string name="menu_contact">Contacto</string>
+    <string name="menu_about">Acerca de</string>
+
+    <string name="tvAboutProgramName">Evaluacion 3</string>
+    <string name="tvAboutName">Juan Carlos Rudin</string>
+    <string name="tvAboutVersion">1.0</string>
+    <string name="tvAboutDate">2017</string>
+
+    <string name="etContactName">Nombre</string>
+    <string name="etContactEmail">Email</string>
+    <string name="etContactMessage">Mensaje</string>
+    <string name="btnContactSend">Enviar Comentario</string>
+    <string name="msgContactEmailSent">Email enviado!</string>
+
+</resources>

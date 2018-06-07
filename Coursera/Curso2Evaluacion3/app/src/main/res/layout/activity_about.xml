@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.juancrud.evaluacion3.activities.AboutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvAboutPrograma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvAboutProgramName"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/text_xl"
+            android:layout_marginTop="@dimen/margin_l" />
+        <TextView
+            android:id="@+id/tvAboutNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvAboutName"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/text_l"
+            android:layout_marginTop="@dimen/margin_m"/>
+        <TextView
+            android:id="@+id/tvAboutVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvAboutVersion"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/text_m"
+            android:layout_marginTop="@dimen/margin_m"/>
+        <TextView
+            android:id="@+id/tvAboutFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvAboutDate"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/text_s"
+            android:layout_marginTop="@dimen/margin_m"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

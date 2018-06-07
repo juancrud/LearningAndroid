@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/margin_xs"
+    android:layout_marginRight="@dimen/margin_xs"
+    tools:context="com.juancrud.evaluacion3.fragments.PerfilFragment">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/ivFoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/beto"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Beto"
+        android:textSize="@dimen/text_l"
+        android:layout_below="@id/ivFoto"
+        android:textAlignment="center"/>
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/tvNombre"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvFotos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/separator"
+        android:layout_alignParentBottom="true">
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

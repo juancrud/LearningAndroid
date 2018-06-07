@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margin_s"
+    tools:context="com.juancrud.evaluacion3.activities.ContactActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/etContactName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/etContactName"
+            android:layout_marginTop="@dimen/margin_s"/>
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/etContactEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/etContactEmail"
+            android:layout_marginTop="@dimen/margin_m"/>
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/etContactMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/etContactMessage"
+            android:layout_marginTop="@dimen/margin_m"
+            android:lines="4" />
+        <Button
+            android:id="@+id/btnContactSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnContactSend"
+            android:layout_marginTop="@dimen/margin_l"
+            android:onClick="btnContactSendOnClick"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

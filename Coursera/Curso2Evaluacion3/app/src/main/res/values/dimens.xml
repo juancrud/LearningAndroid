@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_xs">5dp</dimen>
+    <dimen name="margin_s">10dp</dimen>
+    <dimen name="margin_m">15dp</dimen>
+    <dimen name="margin_l">20dp</dimen>
+    <dimen name="margin_xl">25dp</dimen>
+
+    <dimen name="icon_xs">12dp</dimen>
+    <dimen name="icon_s">16dp</dimen>
+    <dimen name="icon_m">20dp</dimen>
+    <dimen name="icon_l">24dp</dimen>
+    <dimen name="icon_xl">28dp</dimen>
+
+    <dimen name="text_xs">12dp</dimen>
+    <dimen name="text_s">16dp</dimen>
+    <dimen name="text_m">20dp</dimen>
+    <dimen name="text_l">24dp</dimen>
+    <dimen name="text_xl">28dp</dimen>
+</resources>

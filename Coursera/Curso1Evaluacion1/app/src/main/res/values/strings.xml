@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Evaluacion 1</string>
+
+    <string name="hint_nombre">Nombre completo</string>
+    <string name="hint_telefono">Telefono</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_descripcion">Descripcion contacto</string>
+    <string name="btn_siguiente">Siguiente</string>
+
+    <string name="tv_confirmar">Confirmar Datos</string>
+    <string name="tv_nombre">Nombre:</string>
+    <string name="tv_fecha">Fecha Nacimiento:</string>
+    <string name="tv_telefono">Tel:</string>
+    <string name="tv_email">Email:</string>
+    <string name="tv_descripcion">Descripcion:</string>
+    <string name="btn_editar">Editar Datos</string>
+
+    <string name="data">DATA</string>
+
+</resources>

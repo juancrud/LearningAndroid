@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.juancrud.evaluacion.DetailActivity">
+
+    <TextView
+        android:id="@+id/tvConfirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_confirmar"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_nombre"
+        android:layout_below="@+id/tvConfirmar"
+        android:layout_marginTop="@dimen/margin_medium"
+        />
+
+    <TextView
+        android:id="@+id/tvDatoNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_nombre"
+        android:layout_toRightOf="@+id/tvNombre"
+        android:layout_alignBottom="@+id/tvNombre"
+        android:layout_marginLeft="@dimen/margin_small"/>
+
+    <TextView
+        android:id="@+id/tvFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_fecha"
+        android:layout_below="@+id/tvNombre"
+        android:layout_marginTop="@dimen/margin_small" />
+
+    <TextView
+        android:id="@+id/tvDatoFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_fecha"
+        android:layout_toRightOf="@+id/tvFecha"
+        android:layout_alignBottom="@+id/tvFecha"
+        android:layout_marginLeft="@dimen/margin_small"/>
+
+    <TextView
+        android:id="@+id/tvTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_telefono"
+        android:layout_below="@+id/tvFecha"
+        android:layout_marginTop="@dimen/margin_small"
+        />
+
+    <TextView
+        android:id="@+id/tvDatoTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_telefono"
+        android:layout_toRightOf="@+id/tvTelefono"
+        android:layout_alignBottom="@+id/tvTelefono"
+        android:layout_marginLeft="@dimen/margin_small"/>
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_email"
+        android:layout_below="@+id/tvTelefono"
+        android:layout_marginTop="@dimen/margin_small" />
+
+    <TextView
+        android:id="@+id/tvDatoEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_email"
+        android:layout_toRightOf="@+id/tvEmail"
+        android:layout_alignBottom="@+id/tvEmail"
+        android:layout_marginLeft="@dimen/margin_small"/>
+
+    <TextView
+        android:id="@+id/tvDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_descripcion"
+        android:layout_below="@+id/tvEmail"
+        android:layout_marginTop="@dimen/margin_small" />
+
+    <TextView
+        android:id="@+id/tvDatoDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_descripcion"
+        android:layout_toRightOf="@+id/tvDescripcion"
+        android:layout_alignBottom="@+id/tvDescripcion"
+        android:layout_marginLeft="@dimen/margin_small"/>
+
+    <Button
+        android:id="@+id/btnEditar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_editar"
+        android:layout_below="@+id/tvDescripcion"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_centerHorizontal="true"
+        android:onClick="editar"/>
+
+</RelativeLayout>

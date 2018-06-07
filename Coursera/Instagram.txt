@@ -1,0 +1,23 @@
+https://api.instagram.com/oauth/authorize/?client_id=e4cb995fe9fd4ee6860474803e581e5d&redirect_uri=https://juancrud.github.io/coursera-test/&response_type=code&scope=basic+public_content+follower_list+comments+relationships+likes
+
+curl -F 'client_id=e4cb995fe9fd4ee6860474803e581e5d' \
+    -F 'client_secret=7764f04e153b4a999a161dc2fe958113' \
+    -F 'grant_type=authorization_code' \
+    -F 'redirect_uri=https://juancrud.github.io/coursera-test/' \
+    -F 'code=b2edac17fea04acda8089f45931e8d45' \
+    https://api.instagram.com/oauth/access_token
+
+{
+	"access_token": "5713483640.e4cb995.9bd923cc6a6a450785fd11a9fd6e6995", 
+	"user": {
+		"id": "5713483640", 
+		"username": "gatobeto_2017", 
+		"profile_picture": "https://instagram.fewr1-3.fna.fbcdn.net/t51.2885-19/11906329_960233084022564_1448528159_a.jpg", 
+		"full_name": "Beto", 
+		"bio": "", 
+		"website": ""
+	}
+}
+
+https://api.instagram.com/v1/users/self/?access_token=5713483640.e4cb995.9bd923cc6a6a450785fd11a9fd6e6995
+https://api.instagram.com/v1/users/search?q=gaby&access_token=5713483640.e4cb995.9bd923cc6a6a450785fd11a9fd6e6995
